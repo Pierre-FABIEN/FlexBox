@@ -1,0 +1,137 @@
+@import './responsive/flex/index';
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.hidden-sm {
+    display: none;
+}
+
+.section {
+    width: 80vw;
+    padding: 50px;
+    border: 1px solid black;
+    margin: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container {
+    @include rtb;
+    width: 80vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1 {
+    width: 80vw;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 90px;
+    margin-bottom: 0;
+}
+
+h2 {
+    width: 80vw;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-transform: capitalize;
+}
+
+p {
+    width: 80vw;
+    margin-right: auto;
+    margin-left: auto;
+
+    span {
+        font-size: larger;
+        font-weight: 900;
+    }
+
+    code {
+        font-family: 'Open sans', sans-serif;
+    }
+}
+
+.container-exemple {
+    @include clb;
+    width: 150px;
+    height: 300px;
+
+    h3 {
+        span {
+            width: 150px;
+            display: block;
+
+            &:nth-of-type(1) {
+                font-size: 40px;
+            }
+
+
+            &:nth-of-type(2) {
+                text-transform: capitalize;
+                font-size: 14px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            &:nth-of-type(3) {
+                font-size: 15px;
+                color: rgb(197, 97, 97);
+            }
+        }
+    }
+}
+
+.item {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(31, 31, 31);
+    border-radius: 1px;
+    margin: 1px;
+}
+
+.container-demo {
+    width: 80px;
+    height: 80px;
+    background-color: #00193533;
+    border-radius: 1px;
+}
+
+.exception {
+    .container {
+        //@include ccs;
+    }
+
+    .container-exemple h3 span:nth-of-type(2) {
+        text-transform: lowercase;
+
+        &:nth-of-type(2) {
+            font-size: 15px;
+            color: rgb(197, 97, 97);
+        }
+    }
+}

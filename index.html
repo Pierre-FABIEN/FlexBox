@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./SCSS/main.css">
+    <title>Doc FLEX</title>
+</head>
+
+<body>
+
+    <div class="app">
+        <section>
+            <h1>Flex</h1>
+            <p>
+                <span>Exemple:</span>
+                <br><br>
+                <code>
+                    div.container<br><br>
+                    @import './responsive/flex/index';<br>
+                    .container {<br>
+                    &nbsp;&nbsp;@include rte;<br>
+                    }
+                </code>
+            </p>
+            <div class="section">
+                <h2>row top</h2>
+
+                <div class="container">
+                    <div class="container-exemple">
+                        <h3>
+                            <span>rts</span>
+                            <span>row top start<br></span>
+                            <span>@include rts;</span>
+                        </h3>
+                        <div class="container-demo rts">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>rte</span>
+                            <span>row top end<br></span>
+                            <span>@include rte;</span>
+                        </h3>
+                        <div class="container-demo rte">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>rtc</span>
+                            <span>row top center<br></span>
+                            <span>@include rtc;</span>
+                        </h3>
+                        <div class="container-demo rtc">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>rtb</span>
+                            <span>row top space between<br></span>
+                            <span>@include rtb;</span>
+                        </h3>
+                        <div class="container-demo rtb">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>rta</span>
+                            <span>row top around<br></span>
+                            <span>@include rta;</span>
+                        </h3>
+                        <div class="container-demo rta">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2>row center</h2>
+
+                <div class="container">
+                    <div class="container-exemple">
+                        <h3>
+                            <span>rcs</span>
+                            <span>row center start<br></span>
+                            <span>@include rcs;</span>
+                        </h3>
+                        <div class="container-demo rcs">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>rce</span>
+                            <span>row center end<br></span>
+                            <span>@include rce;</span>
+                        </h3>
+                        <div class="container-demo rce">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>rcc</span>
+                            <span>row center center<br></span>
+                            <span>@include rcc;</span>
+                        </h3>
+                        <div class="container-demo rcc">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>rcb</span>
+                            <span>row center space between<br></span>
+                            <span>@include rcb;</span>
+                        </h3>
+                        <div class="container-demo rcb">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>rca</span>
+                            <span>row center around<br></span>
+                            <span>@include rca;</span>
+                        </h3>
+                        <div class="container-demo rca">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2>row bottom</h2>
+
+                <div class="container">
+                    <div class="container-exemple">
+                        <h3>
+                            <span>rbs</span>
+                            <span>row bottom start<br></span>
+                            <span>@include rbs;</span>
+                        </h3>
+                        <div class="container-demo rbs">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>rbe</span>
+                            <span>row bottom end<br></span>
+                            <span>@include rbe;</span>
+                        </h3>
+                        <div class="container-demo rbe">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>rbc</span>
+                            <span>row bottom center<br></span>
+                            <span>@include rbc;</span>
+                        </h3>
+                        <div class="container-demo rbc">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>rbb</span>
+                            <span>row bottom space between<br></span>
+                            <span>@include rbb;</span>
+                        </h3>
+                        <div class="container-demo rbb">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>rba</span>
+                            <span>row bottom around<br></span>
+                            <span>@include rba;</span>
+                        </h3>
+                        <div class="container-demo rba">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2>column left</h2>
+
+                <div class="container">
+                    <div class="container-exemple">
+                        <h3>
+                            <span>cls</span>
+                            <span>column left start<br></span>
+                            <span>@include cls;</span>
+                        </h3>
+                        <div class="container-demo cls">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>cle</span>
+                            <span>column left end<br></span>
+                            <span>@include cle;</span>
+                        </h3>
+                        <div class="container-demo cle">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>clc</span>
+                            <span>column left center<br></span>
+                            <span>@include clc;</span>
+                        </h3>
+                        <div class="container-demo clc">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>clb</span>
+                            <span>column left space between<br></span>
+                            <span>@include clb;</span>
+                        </h3>
+                        <div class="container-demo clb">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>cla</span>
+                            <span>column left around<br></span>
+                            <span>@include cla;</span>
+                        </h3>
+                        <div class="container-demo cla">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2>column center</h2>
+
+                <div class="container">
+                    <div class="container-exemple">
+                        <h3>
+                            <span>ccs</span>
+                            <span>column center start<br></span>
+                            <span>@include ccs;</span>
+                        </h3>
+                        <div class="container-demo ccs">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>cce</span>
+                            <span>column center end<br></span>
+                            <span>@include cce;</span>
+                        </h3>
+                        <div class="container-demo cce">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>ccc</span>
+                            <span>column center center<br></span>
+                            <span>@include ccc;</span>
+                        </h3>
+                        <div class="container-demo ccc">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>ccb</span>
+                            <span>column center space between<br></span>
+                            <span>@include ccb;</span>
+                        </h3>
+                        <div class="container-demo ccb">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>cca</span>
+                            <span>column center around<br></span>
+                            <span>@include cca;</span>
+                        </h3>
+                        <div class="container-demo cca">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2>column right</h2>
+
+                <div class="container">
+                    <div class="container-exemple">
+                        <h3>
+                            <span>crs</span>
+                            <span>column right start<br></span>
+                            <span>@include crs;</span>
+                        </h3>
+                        <div class="container-demo crs">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>cre</span>
+                            <span>column right end<br></span>
+                            <span>@include cre;</span>
+                        </h3>
+                        <div class="container-demo cre">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>crc</span>
+                            <span>column right center<br></span>
+                            <span>@include crc;</span>
+                        </h3>
+                        <div class="container-demo crc">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>crb</span>
+                            <span>column right space between<br></span>
+                            <span>@include crb;</span>
+                        </h3>
+                        <div class="container-demo crb">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>cra</span>
+                            <span>column right around<br></span>
+                            <span>@include cra;</span>
+                        </h3>
+                        <div class="container-demo cra">
+                            <div class="item"></div>
+                            <div class="item"></div>
+                            <div class="item"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section exception">
+                <h2>Exception</h2>
+
+                <div class="container">
+                    <div class="container-exemple">
+                        <h3>
+                            <span>nowrap</span>
+                            <span>@include nowrap;</span>
+                        </h3>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>wrap-reverse</span>
+                            <span>@include wrap-reverse;<span>
+                        </h3>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>row-reverse</span>
+                            <span>@include row-reverse;<span>
+                        </h3>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>column-reverse</span>
+                            <span>@include column-reverse;</span>
+                        </h3>
+                    </div>
+                    <div class="container-exemple">
+                        <h3>
+                            <span>inline-display</span>
+                            <span>@include inline-display;</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+            
+</body>
+
+</html>
